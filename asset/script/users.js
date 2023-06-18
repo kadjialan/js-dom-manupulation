@@ -1,3 +1,4 @@
+/* eslint-disable */
 const users = [
   { name: 'kadji', age: 18 },
   { name: 'alan', age: 41 },
@@ -21,9 +22,3 @@ const users = [
   { name: 'cathy', age: 59 },
   { name: 'paul', age: 15 }
 ]
-
-export default {
-    users
-  };
-  
-

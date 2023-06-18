@@ -29,6 +29,7 @@ function searchUsers (name, age) {
     setTimeout(() => {
       if (shouldResolve()) {
         resolve(
+          /* eslint-disable */
           users.filter(
             (user) =>
               (!name || compareNames(user.name, name)) &&
@@ -36,7 +37,7 @@ function searchUsers (name, age) {
           )
         )
       } else {
-        reject([])
+        reject(new Error('something bad happened'))
       }
     }, 3000)
   })
@@ -45,7 +46,7 @@ function searchUsers (name, age) {
 function renderMessage (message) {
   return `<div class="message">${message}</div>`
 }
-
+/* eslint-disable */
 userContainer.innerHTML = displayUsers(users)
 
 form.addEventListener('submit', (e) => {
