@@ -7,6 +7,7 @@ function displayUser ({ age, name }) {
         <h2>${name}</h2>
         <p>${age} years${age > 1 ? 's' : ''} old</p>
     </div>
+    <button>&cross;</button>
 </div>`
 }
 

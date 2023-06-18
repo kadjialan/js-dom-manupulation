@@ -9,7 +9,7 @@ body {
 }
 
 .project {
-  border: 3px solid rgba(0, 0, 0, 0.825);
+  border: 3px solid #000000d2;
   width: 60%;
   height: fit-content;
   margin: 2rem auto;
@@ -53,10 +53,11 @@ body {
   display: flex;
   align-items: center;
   height: fit-content;
-  border-bottom: 1px solid rgba(43, 42, 42, 0.596);
+  border-bottom: 1px solid #2b2a2a98;
   justify-content: space-around;
   min-height: 70px;
 }
+
 .all-users {
   border-bottom: 3px solid black;
   border-right: 3px solid black;
@@ -73,6 +74,7 @@ body {
   .project {
     width: auto;
   }
+  
   .user {
     display: block;
     gap: 2rem;
