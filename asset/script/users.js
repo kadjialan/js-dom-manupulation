@@ -22,3 +22,8 @@ const users = [
   { name: 'paul', age: 15 }
 ]
 
+export default {
+    users
+  };
+  
+
