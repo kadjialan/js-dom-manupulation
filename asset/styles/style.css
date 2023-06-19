@@ -20,10 +20,9 @@ body {
   background-color: #000000a6;
   color: white;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: end;
   height: fit-content;
-  margin: 1 rem 0;
   padding: 10px;
   border-top: 3px solid black;
   border-right: 3px solid black;
@@ -49,13 +48,9 @@ body {
 }
 
 .user {
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  height: fit-content;
   border-bottom: 1px solid #2b2a2a98;
-  justify-content: space-around;
   min-height: 70px;
+  background-color: #fff;
 }
 
 .all-users {
@@ -67,14 +62,15 @@ body {
 .details {
   display: flex;
   align-items: center;
-  gap: 15rem;
+  padding: 0 10px;
+  justify-content: space-between;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   .project {
     width: auto;
   }
-  
+
   .user {
     display: block;
     gap: 2rem;
@@ -84,5 +80,13 @@ body {
   .details {
     justify-content: space-around;
     gap: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .part1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
