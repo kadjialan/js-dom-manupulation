@@ -4,7 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Search</title>
+    <link rel="stylesheet" href="asset/styles/style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <h1>Searching Names and Ages</h1>
+    <div class="project">
+      <form class="part1">
+        <div>
+          <p>Name</p>
+          <div>
+            <input type="text" placeholder="Search Name" name="name" />
+          </div>
+        </div>
+
+        <div>
+          <p>Age</p>
+          <input type="number" placeholder="Search Age" name="age" />
+        </div>
+
+        <button type="submit">Search</button>
+      </form>
+
+
+      <div id="loader" class="hidden"></div>
+      <div id="all-users"></div>
+
+      
+      <script src="asset/script/script.js"></script>
+    </div>
+  </body>
 </html>

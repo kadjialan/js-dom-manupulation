@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  text-align: center;
+}
+
+.project {
+  border: 3px solid #000000d2;
+  width: 60%;
+  height: fit-content;
+  margin: 2rem auto;
+  padding: 10px;
+}
+
+.part1 {
+  background-color: #000000a6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: fit-content;
+  padding: 10px;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.part1 input {
+  height: 30px;
+  max-width: 80%;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.part1 button {
+  background-color: rgb(158 109 21 / 80%);
+  color: white;
+  border: none;
+  height: 30px;
+  align-items: flex-end;
+  border-radius: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.user {
+  border-bottom: 1px solid #2b2a2a98;
+  min-height: 70px;
+  background-color: #fff;
+}
+
+#all-users {
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.error {
+  color: red;
+}
+
+.delete-btn {
+  border: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .project {
+    width: auto;
+  }
+
+  .user {
+    display: block;
+    gap: 2rem;
+    max-width: 100%;
+  }
+
+  .details {
+    justify-content: space-around;
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .part1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
