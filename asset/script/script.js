@@ -97,7 +97,6 @@ function deleteUser (user) {
   displayUsers(newArray)
 }
 
-
 // Function to handle search button click
 function handleSearch (nameInput, ageInput) {
   const name = nameInput.trim().toLowerCase()
