@@ -53,10 +53,21 @@ body {
   background-color: #fff;
 }
 
-.all-users {
+#all-users {
   border-bottom: 3px solid black;
   border-right: 3px solid black;
   border-left: 3px solid black;
+}
+
+.error {
+  color: red;
+}
+
+.delete-btn {
+  border: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .details {
