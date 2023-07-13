@@ -1,4 +1,4 @@
-const users = [
+let users = [
   { name: 'Kadji Danel', age: 18 },
   { name: 'Alan James', age: 41 },
   { name: 'Gaetan Vianey', age: 30 },
@@ -93,9 +93,10 @@ displayUsers(users)
 function deleteUser (user) {
   console.log(user.name)
   const newArray = users.filter((element) => user.name !== element.name)
-  console.log(newArray)
+  users = newArray
   displayUsers(newArray)
 }
+
 
 // Function to handle search button click
 function handleSearch (nameInput, ageInput) {
